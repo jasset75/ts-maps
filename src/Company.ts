@@ -1,12 +1,10 @@
 import faker from 'faker'
+import { ILocation }  from './Location'
 
 export class Company {
   companyName: string;
   catchPhrase: string;
-  location: {
-    lat: number;
-    lng: number;
-  };
+  location: ILocation;
 
   constructor() {
     this.companyName = faker.company.companyName();
@@ -16,6 +14,4 @@ export class Company {
       lng: parseFloat(faker.address.longitude())
     }
   }
-
-
 }
