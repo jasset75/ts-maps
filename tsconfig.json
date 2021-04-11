@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "out",
+    "sourceMap": true,
+    "lib": ["ES2017", "DOM"]
+  }
+}
